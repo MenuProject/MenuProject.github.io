@@ -7,7 +7,7 @@ let miImage = document.querySelector('img');
 miImage.onclick = function () {
     let miSrc = miImage.getAttribute('src');
     if (miSrc === 'images/burguesa.jpg') {
-      miImage.setAttribute('src','images/Borgo.png');
+      miImage.setAttribute('src','images/borgo.png');
     } else {
       miImage.setAttribute('src', 'images/burguesa.jpg');
     }
