@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Hace el código compatible con las ultimas versiones de navegadores o al menos eso entendí-->
+    <meta name = "viewport" content = "width=device.width, initial-scale = 1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Borgs</title>
+</head>
+
+<body>
+<div id="header">
+    <div class = "container">
+        <nav><!---->
+            <img src="Imagenes/Borgs.png" class="logo">
+            <ul>
+                <li><a href = "#">Hogar</a></li>
+                <li><a href = "#">Hogar</a></li>
+                <li><a href = "#">Hogar</a></li>
+                <li><a href = "#">Hogar</a></li>
+                <li><a href = "#">Hogar</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p><strong>Borg's Burguers</strong></p>
+            <h1>Un <span>restaurante</span><br> experto en sabor.</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------Hamburguesa Vegana---------------------------(about)---- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src = "Imagenes/Vegan.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title">Hamburguesa Vegana</h1>
+                <p>La hamburguesa vegetal, vegetariana o vegana es una variante de la 
+                    hamburguesa tradicional que evita la carne picada para emplear productos
+                    vegetales idóneos para los vegetarianos o veganos. Se emplean en su 
+                    elaboración productos como tofú, seitán o lentejas entre otros. Este 
+                    tipo de hamburguesas es cada vez más popular en las cadenas de restaurantes 
+                    de comida rápida como alternativa a las hamburguesas clásicas con carne.
+                </p>
+                <div class="tab-titles">
+                    <p class = "tab-links active-link" onclick="opentab('ingredientes')">Ingredientes:</p>
+                    <p class = "tab-links" onclick="opentab('preparacion')">Preparación:</p>
+                    <p class = "tab-links" onclick="opentab('educacion')">Educación:</p>
+                </div>
+                <div class="tab-contents active-tab" id="ingredientes">
+                    <ul>
+                        <li><span>Los Vegetales más frescos</span><br>Designing Web/App Interfaces</li>
+                        <li><span>El mejor pan</span><br>Web App Development</li>
+                        <li><span>¿Qué mas llevava una hamburguesa vegana?</span><br>Building Android/iOS Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="preparacion">
+                    <ul>
+                        <li><span>Con el mejor cariño</span><br>Designing Web/App Interfaces</li>
+                        <li><span>En la cocina más limpia</span><br>Web App Development</li>
+                        <li><span>Con el mejor profesionalismo</span><br>Building Android/iOS Apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="educacion">
+                    <ul>
+                        <li><span>Harvard???</span><br>Designing Web/App Interfaces</li>
+                        <li><span>¿¿¿Yale???</span><br>Web App Development</li>
+                        <li><span>La Normal</span><br>Building Android/iOS Apps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------------Services------------------>
+<div id="services">
+    <div class="container">
+        
+    </div>
+</div>
+
+
+
+<!-- --------------------------Scripts------------------------------------------- -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+</body>
+</html>
