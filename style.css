@@ -1,0 +1,238 @@
+*{
+    /*esta parte con "*" afecta a todo el documento html*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    background: #000000;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 55vh;
+    background-image: url(imagenes/fondo-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#header .container{
+    padding: 10px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: -10px ;
+}
+.nombre{
+    font-family: 'BioRhyme', serif;
+    font-size: 120px;
+    color: #ffa75f;
+}
+.logo{
+    width: 210px;
+    margin: 15px 150px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: -45px 40px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+    font-weight: 500;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ffa75f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+/*------------------------estilo de la parte de las hamburguesas ---------------------------------*/
+
+#hamburguesas{
+    padding: 50px 3%;    
+}
+.borgers{
+    font-family: 'BioRhyme', serif;
+    text-decoration: underline;
+    text-decoration-color: #ffa75f;
+    text-decoration-thickness: 2px;
+}
+.container .row1{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*-----no se que hace esta siguiente sección
+      pero los items quedan más ordenados.*/
+.container .row1 >*{
+    flex: 1 1 160px;
+}
+.row1 p{
+    text-align: justify;
+    font-size: 13px;
+}
+.row1 .b1{
+    margin: 10px;
+}
+.row1 img{
+    width: 200px;
+    border-radius: 5px;
+}
+.container .row2{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/*-----no se que hace esta siguiente sección
+      pero los items quedan más ordenados.*/
+.container .row2 >*{
+    flex: 1 1 160px;
+}
+.row2 p{
+    text-align: justify;
+    font-size: 13px;
+}
+.row2 .b1{
+    margin: 10px;
+}
+.row2 img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+
+#hamburguesas .b1{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+
+#hamburguesas .b2{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+
+
+#hamburguesas .b3{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+
+
+
+/*---------------------------estilo de la Parte de los acompañamientoooooos----------------------------*/
+#acompañamientos{
+    padding: 50px 5%;    
+}
+#acompañamientos img{
+    width: 200px;
+    border-radius: 5px;
+}
+.compañia{
+    font-family: 'BioRhyme', serif;
+    text-decoration: underline;
+    text-decoration-color: #ffa75f;
+    text-decoration-thickness: 2px;
+}
+
+.fila1{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+   
+}
+.fila2{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+   
+}
+
+#acompañamientos .a1{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+
+
+#acompañamientos .a2{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+
+
+/*--------------------------------------estilos de la parte de las bebidas---------------------------*/
+#bebidas{
+    padding: 50px 5%;
+}
+#bebidas img{
+    width: 200px;
+}
+.bebido{
+    font-family: 'BioRhyme', serif;
+    text-decoration: underline;
+    text-decoration-color: #ffa75f;
+    text-decoration-thickness: 2px;
+}
+.f1{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.f1 div{
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.f2{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+.f2 div{
+    border-radius: 10px;
+    padding: 20px;
+}
